@@ -28,7 +28,7 @@ document.addEventListener('submit', (e) => {
 }) 
 
 async function fetchReply(){
-    const url = 'https://storied-dolphin-6bc152.netlify.app/.netlify/functions/fetchAI'
+    const url = 'https://iridescent-platypus-9bd3e1.netlify.app/.netlify/functions/fechAI'
 
     const response = await fetch(url, {
         method: 'POST',
