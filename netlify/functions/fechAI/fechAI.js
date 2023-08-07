@@ -14,7 +14,7 @@ const handler = async (event) => {
         prompt: event.body,
         presence_penalty: 0,
         frequency_penalty: 0.3,
-        max_tokens: 150,
+        max_tokens: 240,
         temperature: 0,
         stop: ['->', '\n']
     }) 
