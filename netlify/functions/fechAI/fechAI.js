@@ -14,11 +14,11 @@ const handler = async (event) => {
         prompt: event.body,
         presence_penalty: 0,
         frequency_penalty: 0.3,
-        max_tokens: 100,
+        max_tokens: 150,
         temperature: 0,
         stop: ['->', '\n']
     }) 
-    const subject = event.queryStringParameters.name || 'World'
+    // const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
       body: JSON.stringify({reply: response.data}),
