@@ -15,7 +15,12 @@ html, body {
 }
 
 main {    
-    background-color: slategrey;
+    /* background-color: slategrey; */
+    /* background-color: #252525; */
+    /* background-color: #810000; */
+    /* background-color: #eeebdd; */
+    background-image: url("images/david-laid-and-cbum.jpg");
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -25,7 +30,14 @@ main {
 /* chatbot elements */
 
 .chatbot-container {
-    background-color: #16202C;
+    /* background-color: #16202C; */
+    /* background-color: #eeebdd; */
+    /* background-color: #810000; */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    /* border-radius: 20px; */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
     width: 360px;
     min-height: 380px;
     border-radius: var(--border-rad-lg);
@@ -105,7 +117,9 @@ main {
 
 input[type="text"], button{
     background-color: transparent;
-    border: 1px solid var(--medium-light-text);
+    /* border: 1px solid var(--medium-light-text); */
+    border: 4px solid #fff;
+    outline: none;
     border-radius: 15px;
     padding: 1em;
 }
@@ -119,9 +133,13 @@ input[type="text"] {
 }
 
 button {
-    border-left: 0; 
+    border-left: 1px dashed #fff; 
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+button:active{
+    transform: translateY(1px);
 }
 
 .send-btn-icon {
@@ -138,7 +156,8 @@ h1 {
 }
 
 h2, p {
-    color: var(--medium-light-text); 
+    /* color: var(--medium-light-text);  */
+    color: #f6f6f68e
 }
 
 h2 {
