@@ -10,11 +10,11 @@ const openai = new OpenAIApi(configuration)
 const handler = async (event) => {
   try {
     const response = await openai.createCompletion({
-        model: 'davinci:ft-personal-2023-08-07-22-56-45',
+        model: 'davinci:ft-personal-2023-08-10-15-51-39',
         prompt: event.body,
         presence_penalty: 0,
         frequency_penalty: 0.3,
-        max_tokens: 240,
+        max_tokens: 100,
         temperature: 0,
         stop: ['->', '\n']
     }) 
