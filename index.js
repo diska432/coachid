@@ -28,8 +28,9 @@ document.addEventListener('submit', (e) => {
 }) 
 
 async function fetchReply(){
-    const url = 'https://iridescent-platypus-9bd3e1.netlify.app/.netlify/functions/fechAI'
-
+    // const url = 'https://iridescent-platypus-9bd3e1.netlify.app/.netlify/functions/fechAI'
+    const url = 'https://coachid.tech/.netlify/functions/fechAI'
+    
     const response = await fetch(url, {
         method: 'POST',
         headers: {
